@@ -123,60 +123,6 @@
 			#lua:hover div.top { z-index:993; background-color:#013ADF; margin-left:125px; }
 			#lua:hover div.bottom { z-index:992; background-color:#013ADF; width:165px;
 				background:-moz-linear-gradient(-90deg, #013ADF, #013ADF); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#013ADF), to(#013ADF)); }
-			.cube-wrapper { 
-				width: 100px;
-				height: 100px;
-				top: 1000;
-				left: 25%;
-				position: absolute;
-				box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
-				transform: translate(-50%, -50%);
-			}
-			.cube-1, .cube-1 div {
-					width: 100%;
-					height: 100%;
-					top: 0;
-					left: 0;
-					position: absolute;
-					transform-style: preserve-3d;
-					transition: transform 0.5s ease-in-out;
-			}
-			.cube-front-1 {
-					background: url("logo_youtube.png") #ffffff no-repeat center;
-					background-size: 100%;
-			}
-			.cube-top-1 {
-					background: url("https://discordapp.com/assets/28174a34e77bb5e5310ced9f95cb480b.png") #2C2F33 no-repeat center;
-					background-size: 100%;
-					transform: translate(0, -100%) rotateX(90deg);
-					transform-origin: bottom;
-			}
-			.cube-wrapper:hover .cube-1 {
-					transform: translate(0, 50%) rotateX(-90deg);
-			}
-
-			.cube-2, .cube-2 div {
-					width: 100%;
-					height: 100%;
-					top: 0;
-					left: 0;
-					position: absolute;
-					transform-style: preserve-3d;
-					transition: transform 0.5s ease-in-out;
-			}
-			.cube-front-2 {
-					background: url("logo_youtube.png") #ffffff no-repeat center;
-					background-size: 100%;
-			}
-			.cube-top-2 {
-					background: url("https://i.resimyukle.xyz/J0B1aL.png") #282828 no-repeat center;
-					background-size: 100%;
-					transform: translate(0, -100%) rotateX(90deg);
-					transform-origin: bottom;
-			}
-			.cube-wrapper:hover .cube-2 {
-					transform: translate(0, 50%) rotateX(-90deg);
-			}
 		</style>
 	</head>
 	<body>
@@ -242,19 +188,6 @@
 						</div>
 					</li>
 				</ul>
-			</div>
-		</div>
-
-		<div class="cube-wrapper">
-			<div class="cube-1">
-				<div class="cube-top-1" onclick="location.href='http://google.com/'" style="cursor:pointer"></div>
-				<div class="cube-front-1"></div>
-			</div>
-		</div>
-		<div class="cube-wrapper">
-			<div class="cube-2">
-				<div class="cube-top-2" onclick="location.href='http://google.com/'" style="cursor:pointer"></div>
-				<div class="cube-front-2"></div>
 			</div>
 		</div>
 	</body>
