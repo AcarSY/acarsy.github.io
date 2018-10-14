@@ -125,69 +125,27 @@
 			#lua:hover div.bottom { z-index:992; background-color:#013ADF; width:165px;
 				background:-moz-linear-gradient(-90deg, #013ADF, #013ADF); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#013ADF), to(#013ADF)); }
 
-			@keyframes linkUnderlineIn {
-				0% {
-					transform: scaleY(0);
-				}
-				50% {
-					transform: scaleY(1.1);
-				}
-				63% {
-					transform: scaleY(0.9);
-				}
-				88% {
-					transform: scaleY(1.05);
-				}
-				100% {
-					transform: scaleY(1);
-				}
-			}
-
-			@keyframes linkUnderlineOut {
-				0% {
-					transform: scaleY(1);
-				}
-				100% {
-					transform: scaleY(0);
-				}
-			}
-
-			.link-style-2 a {
-				border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+			a {
+				display: block;
 				color: #848484;
 				text-decoration: none;
-				transition: color 0.3s ease-in-out;
-				background-size: 100% 200%;
-				background-color: blue;
-				background-position: 0 100%;
-				will-change: background-position;
+				position: relative;
 			}
 
-			.link-style-2 a:hover {
-				animation: backgroundAnimateIn 0.3s;
-				animation-fill-mode: forwards;
+			a::after{
+				content: "";
+				background: white;
+				mix-blend-mode: exclusion;
+				width: calc(100% + 20px);
+				height: 0;
+				position: absolute;
+				bottom: -4px;
+				left: -10px;
+				transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 			}
 
-			@keyframes backgroundAnimateIn {
-				0% {
-					background-position: 0 -100%;
-				}
-				21% {
-					background-position: 0 -95%;
-				}
-				42% {
-					background-position: 0 -70%;
-				}
-				63% {
-					background-position: 0 -50%;
-				}
-				86% {
-					background-position: 0 2.5%;
-				}
-				100% {
-					color: white;
-					background-position: 0 0%;
-				}
+			a:hover::after{
+				height: calc(100% + 8px)
 			}
 
 		</style>
@@ -258,9 +216,7 @@
 			</div>
 		</div>
 		<center>
-			<section class="link-style-2">
-				<font size="8"><a href="https://www.npmjs.com/package/useful-tools">Useful Tools</a></font>
-			</section>
+			<font size="8"><a href="https://www.npmjs.com/package/useful-tools">Useful Tools</a></font>
 		</center>
 	</body>
 </html>
