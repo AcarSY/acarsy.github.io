@@ -2,6 +2,7 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>AcarSY</title>
 		<style type="text/css">
 			body {
 				background: #090d00;
@@ -123,6 +124,66 @@
 			#lua:hover div.top { z-index:993; background-color:#013ADF; margin-left:125px; }
 			#lua:hover div.bottom { z-index:992; background-color:#013ADF; width:165px;
 				background:-moz-linear-gradient(-90deg, #013ADF, #013ADF); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#013ADF), to(#013ADF)); }
+
+			@keyframes linkUnderlineIn {
+				0% {
+					transform: scaleY(0);
+				}
+				50% {
+					transform: scaleY(1.1);
+				}
+				63% {
+					transform: scaleY(0.9);
+				}
+				88% {
+					transform: scaleY(1.05);
+				}
+				100% {
+					transform: scaleY(1);
+				}
+			}
+
+			@keyframes linkUnderlineOut {
+				0% {
+					transform: scaleY(1);
+				}
+				100% {
+					transform: scaleY(0);
+				}
+			}
+
+			.link-style-2 a {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+				color: rgba(0, 0, 0, 0.9);
+				text-decoration: none;
+				transition: color 0.3s ease-in-out;
+				background-size: 100% 200%;
+				background-image: linear-gradient(to top, transparent 0%, transparent 50%, blue 50%, blue 100%);
+				background-position: 0 100%;
+				will-change: background-position;
+			}
+
+			.link-style-2 a:hover {
+				animation: backgroundAnimateIn 0.3s;
+				animation-fill-mode: forwards;
+			}
+
+			@keyframes backgroundAnimateIn {
+				0% {
+					background-position: 0 -100%;
+				}
+				63% {
+					background-position: 0 -95%;
+				}
+				86% {
+					background-position: 0 2.5%;
+				}
+				100% {
+					color: white;
+					background-position: 0 0%;
+				}
+			}
+
 		</style>
 	</head>
 	<body>
@@ -163,7 +224,7 @@
 						</div>
 						<div class="bottom">
 							<div class="infobox">
-								<p>%4asdsad0</p>
+								<p>%40</p>
 							</div>
 						</div>
 					</li>
@@ -183,12 +244,15 @@
 						</div>
 						<div class="bottom">
 							<div class="infobox">
-								<p>%25</p>
+								<p>%28</p>
 							</div>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<section class="link-style-2">
+			<a href="https://www.npmjs.com/package/useful-tools">Useful Tools</a>
+		</section>
 	</body>
 </html>
