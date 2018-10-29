@@ -35,14 +35,24 @@
 				padding: .25em 0 .325em;
 				display: block;
 				margin: 0 auto;
+				color: white;
 				text-shadow: 0 0 80px rgba(255,255,255,.5);
 				background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
 				-webkit-background-clip: text;
+				-moz-background-clip: text;
 				background-clip: text;
 				-webkit-text-fill-color: transparent;
 				-webkit-animation: aitf 80s linear infinite;
 				-webkit-transform: translate3d(0,0,0);
 				-webkit-backface-visibility: hidden;
+				-moz-text-fill-color: transparent;
+				-moz-animation: aitf 80s linear infinite;
+				-moz-transform: translate3d(0,0,0);
+				-moz-backface-visibility: hidden;
+				text-fill-color: transparent;
+				animation: aitf 80s linear infinite;
+				transform: translate3d(0,0,0);
+				backface-visibility: hidden;
 			}
 
 			@-webkit-keyframes aitf {
@@ -103,7 +113,7 @@
 
 			#html div.top { z-index:99; }
 			#html div.bottom { z-index:98; height:150px; }
-			#html:hover div.top { z-index:999; background-color:#FE9A2E; margin-left:320px; }
+			#html:hover div.top { z-index:999; background-color:#FE9A2E; margin-left:300px; }
 			#html:hover div.bottom { z-index:998; background-color:#FE9A2E; width:360px;
 				background:-moz-linear-gradient(-90deg, #FE9A2E, #FE9A2E); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#FE9A2E), to(#FE9A2E)); }
 
@@ -115,8 +125,8 @@
 
 			#js div.top { z-index:95; }
 			#js div.bottom { z-index:94; height:250px; }
-			#js:hover div.top { z-index:995; background-color:#F4FA58; margin-left:390px; }
-			#js:hover div.bottom { z-index:994; background-color:#F4FA58; width:430px;
+			#js:hover div.top { z-index:995; background-color:#F4FA58; margin-left:310px; }
+			#js:hover div.bottom { z-index:994; background-color:#F4FA58; width:350px;
 				background:-moz-linear-gradient(-90deg, #F4FA58, #F4FA58); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#F4FA58), to(#F4FA58)); }
 
 			#lua div.top { z-index:93; }
@@ -200,7 +210,7 @@
 						</div>
 						<div class="bottom">
 							<div class="infobox">
-								<p>%78</p>
+								<p>%62</p>
 							</div>
 						</div>
 					</li>
@@ -219,7 +229,7 @@
 		</div>
 		<center>
 			<div class="link-1">
-				<font size="6"><a href="https://www.npmjs.com/package/useful-tools">Useful Tools</a><br><a href="http://gizli">Brulh</a></font>
+				<font size="6"><a href="https://www.npmjs.com/package/useful-tools">Useful Tools</a><br><a href="/changelog/index.html">Değişim Kaydı</a></font><br><a href="http://gizli">Brulh</a></font>
 			</div>
 		</center>
 	</body>
